@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -13,4 +15,4 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
       - name: Run myscript
-        run: python3 myscript.py
+        run: python myscript.py
