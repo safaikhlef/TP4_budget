@@ -13,6 +13,4 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
       - name: Run myscript
-        run: python myscript.py
-        with:
-          python-version: "3.9"
+        run: python3 myscript.py
