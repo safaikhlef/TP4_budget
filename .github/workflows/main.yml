@@ -12,7 +12,7 @@ jobs:
           python-version: "3.9"
       - name: Install packages
         run: pip install -r requirements.txt
-      - name: Install os for python
-        run: pip install os
       - name: Run myscript
         run: python myscript.py
+        with:
+          python-version: "3.9"
